@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.i222683_Controller">
+   <children>
+      <TableView fx:id="bookTableView" layoutX="309.0" layoutY="23.0" prefHeight="200.0" prefWidth="271.0">
+         <columns>
+            <TableColumn fx:id="titleColumn" prefWidth="100" text="Title" />
+            <TableColumn fx:id="authorColumn" prefWidth="100" text="Author" />
+            <TableColumn fx:id="isbnColumn" prefWidth="100" text="ISBN" />
+            <TableColumn fx:id="availabilityColumn" prefWidth="100" text="Availability" />
+         </columns>
+      </TableView>
+      <TextField fx:id="authorid" layoutX="14.0" layoutY="67.0" prefHeight="27.0" prefWidth="183.0" promptText="Enter the name of the author" />
+      <TextField fx:id="titleid" layoutX="14.0" layoutY="123.0" prefHeight="27.0" prefWidth="183.0" promptText="Enter the title of the book" />
+      <TextField fx:id="isbnid" layoutX="14.0" layoutY="186.0" prefHeight="27.0" prefWidth="183.0" promptText="Enter the ISBN number" />
+      <RadioButton fx:id="availableRadioButton" layoutX="14.0" layoutY="251.0" mnemonicParsing="false" text="Available" />
+      <RadioButton fx:id="notavailableid" layoutX="106.0" layoutY="251.0" mnemonicParsing="false" text="Not Available" />
+      <Button fx:id="bt1" layoutX="197.0" layoutY="287.0" minWidth="53.0" mnemonicParsing="false" onAction="#AddButton" prefHeight="31.0" prefWidth="53.0" text="Add" />
+      <Text layoutX="14.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose the Book status" />
+      <Button fx:id="deletebuttonid" layoutX="310.0" layoutY="287.0" minWidth="53.0" mnemonicParsing="false" onAction="#DeleteButton" prefHeight="31.0" prefWidth="53.0" text="delete" />
+      <Text layoutX="14.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search:" wrappingWidth="49.33333333333337" />
+      <TextField fx:id="searchfield" layoutX="63.0" layoutY="10.0" prefHeight="17.0" prefWidth="157.0" />
+      <Button fx:id="searchbutton" layoutX="224.0" layoutY="4.0" minWidth="26.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="70.0" text="Search" />
+      <Button fx:id="edit" layoutX="85.0" layoutY="286.0" mnemonicParsing="false" onAction="#editSearchBook" text="edit" />
+      <Button fx:id="sortbutton" layoutX="405.0" layoutY="286.0" mnemonicParsing="false" onAction="#sorttable" prefHeight="31.0" prefWidth="54.0" text="sort" />
+   </children>
+</AnchorPane>

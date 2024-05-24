@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.i222683_Controller">
+   <children>
+      <MenuBar layoutX="101.0" layoutY="8.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <menus>
+            <Menu fx:id="fileid" mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem fx:id="newid" mnemonicParsing="false" text="New" />
+                  <MenuItem fx:id="open" mnemonicParsing="false" text="Open" />
+                  <MenuItem fx:id="save" mnemonicParsing="false" text="Save" />
+                  <MenuItem fx:id="saveas" mnemonicParsing="false" text="Save As" />
+                  <MenuItem fx:id="exit" mnemonicParsing="false" text="exit" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+               <items>
+                  <MenuItem fx:id="addbook" mnemonicParsing="false" onAction="#NavigateAddBook" text="Add Book" />
+                  <MenuItem fx:id="editbook" mnemonicParsing="false" onAction="#NavigateeditBook" text="Edit Book" />
+                  <MenuItem fx:id="deletebook" mnemonicParsing="false" text="Delete Book" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="View">
+               <items>
+                  <MenuItem fx:id="viewall" mnemonicParsing="false" text="View All Books" />
+                  <MenuItem fx:id="searchbook" mnemonicParsing="false" text="Search Books" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+     <TableView fx:id="bookTableView" layoutX="260.0" layoutY="47.0" prefHeight="305.0" prefWidth="303.0">
+    <columns>
+        <TableColumn fx:id="titleColumn" prefWidth="75.0" text="Title" />
+        <TableColumn fx:id="authorColumn" prefWidth="75.0" text="Author" />
+        <TableColumn fx:id="isbnColumn" prefWidth="75.0" text="ISBN" />
+        <TableColumn fx:id="availabilityColumn" prefWidth="75.0" text="Availability" />
+    </columns>
+</TableView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="33.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="140.0" fitWidth="200.0" layoutX="33.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/man-at-library-vector-43577249.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
